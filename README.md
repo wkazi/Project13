@@ -112,6 +112,7 @@ List the IP addresses of the machines you are monitoring_
     Metricbeat
 
 These Beats allow us to collect the following information from each machine:
+
 **Filebeat:** Collects logs events and watches for log files and locations which can be used to track any logs we want. Example: Lightweight Log Analysis $ Elasticsearch.
 
 **Metricbeat:** Records metrics and statistical data from services running on the server and the operating system. Example: Lightweight Shipper for Metrics). 
