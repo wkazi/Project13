@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-
+![Diagram](https://user-images.githubusercontent.com/86036665/143174845-1a8bd163-b253-464d-8c35-84abd9657328.png)
 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible file may be used to install only certain pieces of it, such as Filebeat.
@@ -26,7 +26,7 @@ Load balancing ensures that the application will be highly available for clients
 
 * What aspect of security do load balancers protect? 
 o It protects the system from DDoS attacks by shifting attack traffic
-o Availability which is part of CIA, load balancers protects, ensure application’s availability when needed, and allowing requests to be shared across a number of servers 
+o Availability which is part of CIA, load balancers protects, ensure applicationâ€™s availability when needed, and allowing requests to be shared across a number of servers 
 
 * What is the advantage of a jump box?
 o Only Jump box can access the Virtual network via ssh 
@@ -130,7 +130,7 @@ http://40.118.186.99:5601/app/kibana
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
-* ssh RedAdmin@JumpBox  “ssh Redadmin@20.106.165.246 
+* ssh RedAdmin@JumpBox  â€œssh Redadmin@20.106.165.246 
 * docker start vigorous_chaplygin   (starts and ansible container)
 * docker attach vigorous_chaplygin  (connect to the ansible container via ssh@ipddress)
 * cd /etc/ansible/  
