@@ -1,4 +1,4 @@
-## Automated ELK Stack Deployment
+# Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
 
@@ -18,7 +18,7 @@ This document contains the following details:
 - How to Use the Ansible Build
 
 
-### Description of the Topology
+# Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
@@ -49,7 +49,7 @@ The configuration details of each machine may be found below.
 | Web-3     | DVWA                   | 10.0.0.7   | Linux (Ubuntu 18.04 LTS) |
 | ELKServer | Monitoring "ELK Stack" | 10.1.0.4   | Linux (Ubuntu 18.04 LTS) |
 
-### Access Policies
+# Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
@@ -71,7 +71,7 @@ A summary of the access policies in place can be found in the table below.
 | ELKServer | Yes (HTTP, SSH)     | 10.0.0.1-254, SSH 10.0.0.4 | 5601   
 
 
-### Elk Configuration
+# Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
@@ -89,13 +89,13 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![dockerps](https://user-images.githubusercontent.com/86036665/143174914-a8802de0-f18f-4b2a-840e-ccda64af4763.png)
+![](Images/dockerps.png)
 
 Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
 
 
 
-### Target Machines & Beats
+# Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 List the IP addresses of the machines you are monitoring_
 Web-1 10.0.0.5
@@ -112,7 +112,7 @@ Filebeat: Collects logs events and watches for log files and locations which can
 Metricbeat: Records metrics and statistical data from services running on the server and the operating system. Example: Lightweight Shipper for Metrics). 
 
 
-### Using the Playbook
+# Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
