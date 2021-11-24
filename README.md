@@ -1,4 +1,3 @@
-# Project13
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
@@ -25,12 +24,14 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly available for clients, in addition to restricting inbound access to the network.
 
-What aspect of security do load balancers protect? 
+* What aspect of security do load balancers protect? 
 o It protects the system from DDoS attacks by shifting attack traffic
-o Availability which is part of CIA, load balancers protects, ensure applicationâ€™s availability when needed, and allowing requests to be shared across a number of servers 
+o Availability which is part of CIA, load balancers protects, ensure application’s availability when needed, and allowing requests to be shared across a number of servers 
 
-What is the advantage of a jump box?
-o Only Jump box can access the Virtual network via ssh . Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network files and system logs and system metrics.
+* What is the advantage of a jump box?
+o Only Jump box can access the Virtual network via ssh 
+
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network files and system logs and system metrics.
 
 What does Filebeat watch for? 
 For log files/locations, collect log events and forwards them to   Elasticsearch or Logstash for indexing
@@ -40,13 +41,13 @@ Records metrics and statistical data from the operating system and from services
 
 The configuration details of each machine may be found below.
 
-| Name    | Function            | IP Address | Operating System   |
-|-----------------------------------------------------------------|
+| Name      | Function               | IP Address | Operating System         |
+|-----------|------------------------|------------|--------------------------|
 | Jump Box  | Gateway                | 10.0.0.4   | Linux (Ubuntu 18.04 LTS) |
 | Web-1     | DVWA                   | 10.0.0.5   | Linux (Ubuntu 18.04 LTS) |
 | Web-2     | DVWA                   | 10.0.0.6   | Linux (Ubuntu 18.04 LTS) |
 | Web-3     | DVWA                   | 10.0.0.7   | Linux (Ubuntu 18.04 LTS) |
-| ELKServer | Monitoring "ELK Stack" | 10.1.0.4   | Linux (Ubuntu 18.04 LTS)|
+| ELKServer | Monitoring "ELK Stack" | 10.1.0.4   | Linux (Ubuntu 18.04 LTS) |
 
 ### Access Policies
 
@@ -61,8 +62,8 @@ Which machine did you allow to access your ELK VM? JumpBox Provisioner What was 
 
 A summary of the access policies in place can be found in the table below.
 
-| Name      | Publicly Accessible | Allowed IP addresses       | Allowed          |                                                                Ports
-|-----------|---------------------|----------------------------|---------|
+| Name      | Publicly Accessible | Allowed IP addresses       | Allowed Ports |
+|-----------|---------------------|----------------------------|---------------|
 | Jump Box  | Yes (SSH)           | IP from my local machine   | 22            |
 | Web-1     | Yes (HTTP)          | 10.0.0.1-254               | 80            |
 | Web-2     | Yes (HTTP)          | 10.0.0.1-254               | 80            |
@@ -89,7 +90,6 @@ The playbook implements the following tasks:
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
- 
 
 
 
@@ -130,7 +130,7 @@ http://40.118.186.99:5601/app/kibana
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
-* ssh RedAdmin@JumpBox  â€œssh Redadmin@20.106.165.246 
+* ssh RedAdmin@JumpBox  “ssh Redadmin@20.106.165.246 
 * docker start vigorous_chaplygin   (starts and ansible container)
 * docker attach vigorous_chaplygin  (connect to the ansible container via ssh@ipddress)
 * cd /etc/ansible/  
